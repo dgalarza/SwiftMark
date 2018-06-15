@@ -77,7 +77,7 @@
 		1D42BC571DB2AAA900F61ACA /* SwiftMarkNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMarkNode.swift; sourceTree = "<group>"; };
 		1D42BC581DB2AAA900F61ACA /* SwiftMarkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMarkOperation.swift; sourceTree = "<group>"; };
 		1D42BC591DB2AAA900F61ACA /* SwiftMarkOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMarkOption.swift; sourceTree = "<group>"; };
-		1D7F3B451DB2B1A7005C259E /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
+		1D7F3B451DB2B1A7005C259E /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		1D7F3B471DB2B6A4005C259E /* blocks.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blocks.c; sourceTree = "<group>"; };
 		1D7F3B481DB2B6A4005C259E /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
 		1D7F3B491DB2B6A4005C259E /* case_fold_switch.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = case_fold_switch.inc; sourceTree = "<group>"; };
@@ -253,7 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				1D7F3B461DB2B671005C259E /* libcmark */,
-				1D7F3B451DB2B1A7005C259E /* module.map */,
+				1D7F3B451DB2B1A7005C259E /* module.modulemap */,
 				1D42BC531DB2AAA900F61ACA /* SwiftMark.swift */,
 				1D42BC541DB2AAA900F61ACA /* SwiftMarkConvertToHTMLOperation.swift */,
 				1D42BC551DB2AAA900F61ACA /* SwiftMarkConvertToXMLOperation.swift */,
@@ -582,6 +582,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = SwiftMark;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -626,6 +627,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = SwiftMark;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -655,7 +657,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyrolyse.SwiftMark;
 				PRODUCT_NAME = SwiftMark;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "${SRCROOT}/../Sources/**";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -683,7 +684,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyrolyse.SwiftMark;
 				PRODUCT_NAME = SwiftMark;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "${SRCROOT}/../Sources/**";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "";
